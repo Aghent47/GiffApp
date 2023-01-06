@@ -1,6 +1,6 @@
-
-import React from 'react'
 import { useState } from 'react';
+import { Addcategory as AddCategory } from './components/AddCategory';
+
 export const GifExpertApp = () => {
 
     /* Hooks */
@@ -16,6 +16,7 @@ export const GifExpertApp = () => {
         <h1>GifExpertApp</h1>
     
         {/* Input */}
+        <AddCategory />
 
         {/* Gif List */}
         <button onClick={ onAddCategory } > Agregar </button>
