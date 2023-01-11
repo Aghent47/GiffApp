@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import PropType from 'prop-types';
 export const Addcategory = ({ onNewCAtegory }) => {
 
   const [inputValue, setInputValue] = useState('');
@@ -24,4 +24,8 @@ export const Addcategory = ({ onNewCAtegory }) => {
       <input type="text" placeholder="Buscar Gif" value={ inputValue } onChange={ onInputChange } />
      </form>
   );
+}
+
+Addcategory.PropTypes = {
+  onNewCAtegory: PropType.func.isRequired,
 }
